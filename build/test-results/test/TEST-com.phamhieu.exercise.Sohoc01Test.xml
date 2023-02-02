@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phamhieu.exercise.Sohoc01Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-02T08:34:40" hostname="SYNCNATIAN" time="0.028">
+  <properties/>
+  <testcase name="findGCD()" classname="com.phamhieu.exercise.Sohoc01Test" time="0.026"/>
+  <testcase name="findLCM()" classname="com.phamhieu.exercise.Sohoc01Test" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

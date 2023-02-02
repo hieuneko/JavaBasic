@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfbfc380-6d0c-41a8-8b5f-71379c3e7ed5" name="Changes" comment="fix2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phamhieu/exercise/sohoc01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/phamhieu/exercise/sohoc01Test.java" afterDir="false" />
+    <list default="true" id="bfbfc380-6d0c-41a8-8b5f-71379c3e7ed5" name="Changes" comment="sohoc02">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/phamhieu/exercise/sohoc02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/phamhieu/exercise/sohoc02Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/phamhieu/exercise/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phamhieu/exercise/Demo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phamhieu/exercise/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/phamhieu/exercise/DemoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/phamhieu/exercise/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/phamhieu/exercise/DemoTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,30 +89,7 @@
       <recent name="com.phamhieu.exercise.basic" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.sohoc01Test">
-    <configuration name="ExerciseNumber01Test.setUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.phamhieu.exercise.basic.ExerciseNumber01Test.setUp&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.sohoc02Test">
     <configuration name="DemoTest.setUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaBasic.test" />
       <extension name="coverage">
@@ -162,12 +137,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sohoc02Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaBasic.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.phamhieu.exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.phamhieu.exercise" />
+      <option name="MAIN_CLASS_NAME" value="com.phamhieu.exercise.sohoc02Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sohoc02Test.testSoHoc02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaBasic.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.phamhieu.exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.phamhieu.exercise" />
+      <option name="MAIN_CLASS_NAME" value="com.phamhieu.exercise.sohoc02Test" />
+      <option name="METHOD_NAME" value="testSoHoc02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.sohoc02Test" />
+        <item itemvalue="JUnit.sohoc02Test.testSoHoc02" />
         <item itemvalue="JUnit.sohoc01Test" />
         <item itemvalue="JUnit.sohoc01Test.findGCD" />
         <item itemvalue="JUnit.DemoTest.setUp" />
-        <item itemvalue="Gradle.ExerciseNumber01Test.setUp" />
       </list>
     </recent_temporary>
   </component>
@@ -226,6 +233,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="new" />
     <MESSAGE value="fix2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix2" />
+    <MESSAGE value="sohoc02" />
+    <option name="LAST_COMMIT_MESSAGE" value="sohoc02" />
   </component>
 </project>

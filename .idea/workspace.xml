@@ -5,170 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfbfc380-6d0c-41a8-8b5f-71379c3e7ed5" name="Changes" comment="new">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/JavaBasic.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/JavaBasic.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/JavaBasic.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/JavaBasic.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaBasic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaBasic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/phamhieu/exercise/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/phamhieu/exercise/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/phamhieu/exercise/DemoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.phamhieu.exercise.basic.ExerciseNumber01Test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.phamhieu.exercise.basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.phamhieu.exercise.basic.ExerciseNumber01Test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/META-INF/maven/org.jacoco/org.jacoco.agent/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/META-INF/maven/org.jacoco/org.jacoco.agent/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/jacocoagent.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/org/jacoco/agent/AgentJar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phamhieu/exercise/Demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/phamhieu/exercise/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/phamhieu/exercise/DemoTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="JavaBasic" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
       </state>
     </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FormatOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="6b870d17-bb90-4ee8-b97c-1d4201a3faa0" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="OptimizeOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
-  </component>
-  <component name="ProjectId" id="2L81X8EdNWi503cUhRvNR0JHgIm" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "D:/Code/java/JavaBasic",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "actions.on.save"
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.phamhieu.exercise" />
-      <recent name="com.phamhieu.exercise.basic" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.DemoTest.setUp">
-    <configuration name="ExerciseNumber01Test.setUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.phamhieu.exercise.basic.ExerciseNumber01Test.setUp&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="DemoTest.setUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaBasic.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.phamhieu.exercise.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.phamhieu.exercise" />
-      <option name="MAIN_CLASS_NAME" value="com.phamhieu.exercise.DemoTest" />
-      <option name="METHOD_NAME" value="setUp" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.DemoTest.setUp" />
-        <item itemvalue="Gradle.ExerciseNumber01Test.setUp" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="bfbfc380-6d0c-41a8-8b5f-71379c3e7ed5" name="Changes" comment="" />
-      <created>1675237935752</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1675237935752</updated>
-    </task>
-    <task id="LOCAL-00001" summary="new">
-      <created>1675243574959</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1675243574959</updated>
-    </task>
-    <task id="LOCAL-00002" summary="fix">
-      <created>1675244043306</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1675244043306</updated>
-    </task>
-    <task id="LOCAL-00003" summary="new">
-      <created>1675244383863</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1675244383863</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix" />
-    <MESSAGE value="new" />
-    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
 </project>

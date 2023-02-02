@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.phamhieu.exercise.basic.ExerciseNumber01Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-01T09:22:09" hostname="SYNCNATIAN" time="0.082">
-  <properties/>
-  <testcase name="setUp()" classname="com.phamhieu.exercise.basic.ExerciseNumber01Test" time="0.082"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

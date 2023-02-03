@@ -7,24 +7,21 @@ public class Sohoc07 {
     // , 1^3 + 5^3 + 3^3 = 153 (Giới hạn 2<=m<=5).
     // A hoa noi chi can kiem tra 1 so nhap vao thoa hay khong nen em chi viet ham check cho so nhap vao
     public boolean checkArmstrongNumber(final int input) {
-        int temp = input;
-        int digits = 0;
-        int last;
-        int sum = 0;
-        while (temp > 0) {
-            temp = temp / 10;
-            digits++;
-        }
-        if(digits < 2 || digits > 5){
+        int digits = getDigits(input);
+        if (digits < 2 || digits > 5) {
             return false;
         }
 
-        temp = input;
+        int sum = 0;
+        int temp = input;
         while (temp > 0) {
-            last = temp % 10;
-            sum += (Math.pow(last, digits));
+            sum += Math.pow(temp % 10, digits);
             temp = temp / 10;
         }
         return input == sum;
+    }
+
+    private static int getDigits(int number) {
+        return number > 9 ? 1 + getDigits(number / 10) : 1;
     }
 }

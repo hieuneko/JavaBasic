@@ -21,7 +21,6 @@ public class Sohoc04 {
             int len = arrayFibonaci.size();
             arrayFibonaci.add(arrayFibonaci.get(len - 1) + arrayFibonaci.get(len - 2));
         }
-        arrayFibonaci.remove(arrayFibonaci.size() - 1);
         for(int num : arrayFibonaci) {
             total = total + num;
         }

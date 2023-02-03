@@ -2,14 +2,14 @@ package com.phamhieu.exercise.basic.number;
 
 public class Sohoc06 {
 
-    public double findSquareRoot(final double n){
-        double x = n;
-        double y = 1;
-        double e = 0.0001;
-        while (x - y > e) {
-            x = (x + y) / 2;
-            y = n / x;
+    static final double ACCURACY = 0.0001;
+    public double findSquareRoot(final double input){
+        double number = input;
+        double temp = 1;
+        while (number - temp > ACCURACY) {
+            number = (number + temp) / 2;
+            temp = input / number;
         }
-        return Math.round(x * 1000000.0) / 1000000.0;
+        return Math.round(number * 1000000.0) / 1000000.0;
     }
 }

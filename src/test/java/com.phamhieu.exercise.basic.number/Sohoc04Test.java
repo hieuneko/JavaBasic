@@ -12,6 +12,7 @@ class Sohoc04Test {
 
         assertEquals(0, test.findTotalOfArrayFibonaci(-2));
         assertEquals(0, test.findTotalOfArrayFibonaci(0));
+        assertEquals(1, test.findTotalOfArrayFibonaci(1));
         assertEquals(12, test.findTotalOfArrayFibonaci(8));
     }
 }

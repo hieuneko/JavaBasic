@@ -2,30 +2,30 @@ package com.phamhieu.exercise.basic.number;
 
 public class Sohoc03 {
 
-    public String findTheProductOfPrimeFactors(final int x){
-        int n = x, i = 2;
+    public String findTheProductOfPrimeFactors(final int x) {
+        int n = x;
+        int i = 2;
         final StringBuilder arrayPrime = new StringBuilder();
-        if(n == 0 || n == 1){
+        if (n == 0 || n == 1) {
             return "0";
         }
-        if(n < 0){
+        if (n < 0) {
             return "- " + findTheProductOfPrimeFactors(-n);
         }
-        while(n > 1){
-            if(checkPrime(i)){
-                if(n % i == 0){
+        while (n > 1) {
+            if (checkPrime(i)) {
+                if (n % i == 0) {
                     arrayPrime.append(i).append(" * ");
                     n /= i;
-                }
-                else
+                } else
                     i++;
-            }
-            else
+            } else
                 i++;
         }
         return arrayPrime.substring(0, arrayPrime.length() - 2).trim();
     }
-    public boolean checkPrime(final int x){
+
+    public boolean checkPrime(final int x) {
         if (x < 2) {
             return false;
         }

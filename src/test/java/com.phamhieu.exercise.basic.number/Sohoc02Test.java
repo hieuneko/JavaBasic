@@ -10,6 +10,7 @@ class Sohoc02Test {
     void findTotalOfNumber() {
         final var Exercise02 = new Sohoc02();
 
+        assertEquals(0, Exercise02.findTotalOfNumber(-2));
         assertEquals(0, Exercise02.findTotalOfNumber(0));
         assertEquals(10, Exercise02.findTotalOfNumber(1234));
     }

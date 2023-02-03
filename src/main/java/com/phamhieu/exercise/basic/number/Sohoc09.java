@@ -15,6 +15,6 @@ public class Sohoc09 {
             squareRoot = (temp + (input / temp)) / 2;
         }
         while ((temp - squareRoot) != 0);
-        return Math.round(squareRoot * 1000000.0) / 1000000.0;
+        return Math.round(squareRoot * 1_000_000.0) / 1_000_000.0;
     }
 }

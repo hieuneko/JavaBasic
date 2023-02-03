@@ -8,10 +8,10 @@ class Sohoc02Test {
 
     @Test
     void findTotalOfNumber() {
-        final var Exercise02 = new Sohoc02();
+        final var test = new Sohoc02();
 
-        assertEquals(0, Exercise02.findTotalOfNumber(-2));
-        assertEquals(0, Exercise02.findTotalOfNumber(0));
-        assertEquals(10, Exercise02.findTotalOfNumber(1234));
+        assertEquals(0, test.findTotalOfNumber(-2));
+        assertEquals(0, test.findTotalOfNumber(0));
+        assertEquals(10, test.findTotalOfNumber(1234));
     }
 }

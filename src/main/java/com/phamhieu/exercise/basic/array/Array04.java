@@ -10,8 +10,9 @@ public class Array04 {
         for (int i = 1; i < input.length; i++) {
             int count = 1;
             for (int j = i; j >= 0; j--) {
-                if (input[j] - input[j - 1] != 1)
+                if (input[j] - input[j - 1] != 1) {
                     break;
+                }
                 count++;
                 if (count > maxLength) {
                     maxLength = count;

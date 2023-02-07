@@ -9,16 +9,16 @@ public class Array04 {
         int start = 0;
         for (int i = 1; i < input.length; i++) {
             int count = 1;
-            for (int j = i; j >= 0; j--) {
-                if (input[j] - input[j - 1] != 1) {
-                    break;
+            for (int j = i; j > 0; j--) {
+                if (input[j] - input[j - 1] == 1) {
+                    count++;
+                    if (count > maxLength) {
+                        maxLength = count;
+                        end = i;
+                        start = j - 1;
+                    }
                 }
-                count++;
-                if (count > maxLength) {
-                    maxLength = count;
-                    end = i;
-                    start = j - 1;
-                }
+
             }
         }
         if (maxLength < 2) {

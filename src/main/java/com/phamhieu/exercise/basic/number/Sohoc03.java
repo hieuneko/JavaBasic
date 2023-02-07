@@ -14,24 +14,14 @@ public class Sohoc03 {
         final StringBuilder arrayPrime = new StringBuilder();
         int i = 2;
         while (number > 1) {
-            if (checkPrime(i)) {
-                if (number % i == 0) {
-                    arrayPrime.append(i).append(" * ");
-                    number /= i;
-                } else
-                    i++;
-            } else
+            if (number % i == 0) {
+                arrayPrime.append(i).append(" * ");
+                number /= i;
+            } else {
                 i++;
-        }
-        return arrayPrime.substring(0, arrayPrime.length() - 2).trim();
-    }
-
-    public boolean checkPrime(final int input) {
-        for (int i = 2; i <= (int) Math.sqrt(input); i++) {
-            if (input % i == 0) {
-                return false;
             }
         }
-        return true;
+        return arrayPrime.substring(0, arrayPrime.length() - 3);
     }
+    
 }

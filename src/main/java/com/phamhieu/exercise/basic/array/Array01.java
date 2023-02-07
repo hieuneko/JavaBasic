@@ -4,9 +4,9 @@ public class Array01 {
 
     public int findMaxNumberArray(final int[] input) {
         int maxNumber = input[0];
-        for (int i = 0; i < input.length - 1; i++) {
-            if (input[i] < input[i + 1]) {
-                maxNumber = input[i + 1];
+        for (int i = 1; i < input.length; i++) {
+            if (input[i] > maxNumber) {
+                maxNumber = input[i];
             }
         }
         return maxNumber;

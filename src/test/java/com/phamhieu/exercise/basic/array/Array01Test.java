@@ -9,6 +9,6 @@ class Array01Test {
     @Test
     void findMaxNumberArray() {
         final var test = new Array01();
-        assertEquals(9, test.findMaxNumberArray(new int[]{2, 5, 1, 9, 7}));
+        assertEquals(9, test.findMaxNumberArray(new int[]{2, 5, 1, 9, 7, 5, 6, 5}));
     }
 }

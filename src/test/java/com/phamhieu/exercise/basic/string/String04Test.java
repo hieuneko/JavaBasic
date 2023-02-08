@@ -13,6 +13,6 @@ class String04Test {
         assertFalse(test.checkDuplicateString(""));
         assertFalse(test.checkDuplicateString("abc"));
         assertTrue(test.checkDuplicateString("abab"));
-        assertTrue(test.checkDuplicateString("aaa"));
+        assertTrue(test.checkDuplicateString("abrtrgfdfabererab"));
     }
 }

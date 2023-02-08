@@ -14,5 +14,6 @@ class String04Test {
         assertFalse(test.checkDuplicateString("abc"));
         assertTrue(test.checkDuplicateString("abab"));
         assertTrue(test.checkDuplicateString("abrtrgfdfabererab"));
+        assertTrue(test.checkDuplicateString("rtrgfdfbabererab"));
     }
 }

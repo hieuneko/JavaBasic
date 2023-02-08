@@ -1,19 +1,22 @@
 package com.phamhieu.exercise.basic.array;
 
+import java.util.Arrays;
+
 public class Array03 {
 
     public int[] sortArrayBySumDigit(final int[] input) {
+        int[] arrayNumber = Arrays.copyOf(input, input.length);
         for (int i = 0; i < input.length - 1; i++) {
             for (int j = i + 1; j < input.length; j++) {
-                if (getSumDigits(input[i]) > getSumDigits(input[j])) {
+                if (getSumDigits(arrayNumber[i]) > getSumDigits(arrayNumber[j])) {
                     int temp;
-                    temp = input[i];
-                    input[i] = input[j];
-                    input[j] = temp;
+                    temp = arrayNumber[i];
+                    arrayNumber[i] = arrayNumber[j];
+                    arrayNumber[j] = temp;
                 }
             }
         }
-        return input;
+        return arrayNumber;
     }
 
     private static int getSumDigits(int number) {

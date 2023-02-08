@@ -10,7 +10,7 @@ class String02Test {
     @Test
     void checkSymmetryString() {
         final var test = new String02();
-        assertFalse(test.checkSymmetryString(""));
+        assertTrue(test.checkSymmetryString(""));
         assertFalse(test.checkSymmetryString("abcd"));
         assertTrue(test.checkSymmetryString("abcdcba"));
         assertTrue(test.checkSymmetryString("cvbvc"));

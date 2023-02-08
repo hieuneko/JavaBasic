@@ -11,11 +11,7 @@ public class Array07 {
         }
 
         int[] result = new int[input.length + 1];
-        if (number <= input[0]) {
-            result[0] = number;
-        } else {
-            result[0] = input[0];
-        }
+        result[0] = Math.min(number, input[0]);
         int length = result.length;
         if (number >= input[input.length - 1]) {
             result[input.length] = number;

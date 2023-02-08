@@ -21,7 +21,6 @@ public class String06 {
         for (int i = 0; i < 10; i++) {
             if ((tempSum + 3 * i) % 10 == 0) {
                 verifyNumber = i;
-                break;
             }
         }
         return verifyNumber;

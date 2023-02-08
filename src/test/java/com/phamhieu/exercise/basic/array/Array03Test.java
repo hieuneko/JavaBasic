@@ -9,6 +9,7 @@ class Array03Test {
     @Test
     void sortArrayByDigit() {
         final var test = new Array03();
-        assertArrayEquals(new int[]{1, 23, 45, 100}, test.sortArrayByDigit(new int[]{23, 45, 1, 100}));
+        assertArrayEquals(new int[]{}, test.sortArrayBySumDigit(new int[]{}));
+        assertArrayEquals(new int[]{1, 102, 23, 45}, test.sortArrayBySumDigit(new int[]{23, 45, 1, 102}));
     }
 }

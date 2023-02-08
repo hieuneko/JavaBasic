@@ -18,6 +18,6 @@ public class String05 {
                 sumInOdd += temp;
             }
         }
-        return (sumInOdd + 3 * sumInEven) % 10 == 2;
+        return (sumInOdd + 3 * sumInEven) % 10 == 0;
     }
 }

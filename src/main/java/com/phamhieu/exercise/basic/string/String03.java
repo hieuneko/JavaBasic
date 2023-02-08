@@ -2,21 +2,15 @@ package com.phamhieu.exercise.basic.string;
 
 public class String03 {
     public int findSumNumberInString(final String input) {
-        if (input.equals("")) {
-            return 0;
-        }
-
         int sum = 0;
         int number = 0;
-        String numberAtPosition = "";
         for (int i = 0; i < input.length(); i++) {
             if (input.charAt(i) >= '0' && input.charAt(i) <= '9') {
-                numberAtPosition += input.charAt(i);
-                number = Integer.parseInt(numberAtPosition);
+                number = number * 10 + Integer.parseInt(String.valueOf(input.charAt(i)));
             } else {
-                if (!numberAtPosition.equals("")) {
+                if (number != 0) {
                     sum += number;
-                    numberAtPosition = "";
+                    number = 0;
                 }
             }
         }

@@ -13,6 +13,6 @@ class String02Test {
         assertTrue(test.checkSymmetryString(""));
         assertFalse(test.checkSymmetryString("abcd"));
         assertTrue(test.checkSymmetryString("abcdcba"));
-        assertTrue(test.checkSymmetryString("cvbvc"));
+        assertTrue(test.checkSymmetryString("cvvc"));
     }
 }

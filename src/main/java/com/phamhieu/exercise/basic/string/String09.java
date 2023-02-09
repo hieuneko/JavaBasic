@@ -6,12 +6,8 @@ public class String09 {
     // các ký tự đầu mỗi từ luôn là viết hoa, các ký tự không phải đầu từ luôn phải viết thường
     public String formatCharInString(final String input) {
         char[] arrayInput = input.toCharArray();
-        if (arrayInput[0] >= 97 && arrayInput[0] <= 122) {
-            arrayInput[0] -= 32;
-        }
-
-        for (int i = 1; i < arrayInput.length; i++) {
-            if (arrayInput[i - 1] == 32) {
+        for (int i = 0; i < arrayInput.length; i++) {
+            if (i == 0 || arrayInput[i - 1] == 32) {
                 if (arrayInput[i] >= 97 && arrayInput[i] <= 122) {
                     arrayInput[i] -= 32;
                 }

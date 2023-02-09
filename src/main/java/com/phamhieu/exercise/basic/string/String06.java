@@ -6,20 +6,18 @@ public class String06 {
     // qua là số verify. Viết chương trình nhận vào chuỗi số gồm 12 chữ số.
     // Trả về kết quả là chữ số verify để có thể tạo thành một barcode gồm 13 số hợp lệ.
     public int calculateEAN13CheckDigit(final String input) {
-        int sumEven = 0;
-        int sumOdd = 0;
+        int sum = 0;
         for (int i = 0; i < input.length(); i++) {
             int temp = Integer.parseInt(String.valueOf(input.charAt(i)));
             if ((i + 1) % 2 == 0) {
-                sumEven += temp;
+                sum += 3 * temp;
             } else {
-                sumOdd += temp;
+                sum += temp;
             }
         }
-        int tempSum = 3 * sumEven + sumOdd;
         int verifyNumber = 0;
         for (int i = 0; i < 10; i++) {
-            if ((tempSum + i) % 10 == 0) {
+            if ((sum + i) % 10 == 0) {
                 verifyNumber = i;
             }
         }

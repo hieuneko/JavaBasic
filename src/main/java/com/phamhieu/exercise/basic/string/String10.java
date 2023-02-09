@@ -10,6 +10,10 @@ public class String10 {
         while (j >= 0 && Character.isWhitespace(input.charAt(j))) {
             j--;
         }
+        if (i >= j) {
+            return "";
+        }
+
         char[] arrayInput = input.substring(i, j + 1).toCharArray();
         String tempString = "";
         for (int k = 0; k < arrayInput.length - 1; k++) {

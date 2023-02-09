@@ -11,5 +11,6 @@ class String10Test {
         final var test = new String10();
         assertEquals("Chao cac ban", test.removeUnneededSpace("  Chao  cac ban "));
         assertEquals("thu nghiem", test.removeUnneededSpace("thu nghiem  "));
+        assertEquals("", test.removeUnneededSpace("  "));
     }
 }

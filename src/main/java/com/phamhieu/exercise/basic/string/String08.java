@@ -11,10 +11,17 @@ public class String08 {
     //) --> Không hợp lệ, dấu đóng ngoặc phải đóng 1 dấu mở ngoặc
     //()(, )() --> Không hợp lệ
     public boolean checkParentheses(final String input) {
-        if (input.charAt(0) == ')' || input.charAt(input.length() - 1) == '(') {
-            return false;
+        int count = 0;
+        for (int i = 0; i < input.length(); i++) {
+            if (input.charAt(i) == '(') {
+                count++;
+            } else {
+                count--;
+            }
+            if (count < 0) {
+                return false;
+            }
         }
-
-        
+        return count == 0;
     }
 }

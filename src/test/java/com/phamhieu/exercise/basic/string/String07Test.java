@@ -11,7 +11,7 @@ class String07Test {
     void checkContainString() {
         final var test = new String07();
         assertFalse(test.checkContainString("", "abc"));
-        assertFalse(test.checkContainString("abc", ""));
+        assertTrue(test.checkContainString("abc", ""));
         assertTrue(test.checkContainString("pham hieu", "hieu"));
     }
 }

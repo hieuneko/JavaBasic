@@ -1,17 +1,28 @@
 package com.phamhieu.exercise.basic.string;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class String07 {
 
     //Implement hàm tìm kiếm một chuỗi string trong một chuỗi string khác
-    public boolean checkContainString(final String input, final String containString) {
+    public boolean checkContainString(final String input, final String subString) {
+        if (input.equalsIgnoreCase(subString)) {
+            return true;
+        }
+
+        Set<String> allSubStrings = new HashSet<>();
         boolean check = false;
-        for (int i = 0; i < input.length() - containString.length(); i++) {
-            for (int j = 0; j < containString.length(); j++) {
-                if (input.charAt(i + j) == containString.charAt(j)) {
-                    check = true;
-                }
+        int length = subString.length();
+        for (int i = 0; i < input.length(); ++i) {
+            if (i + length <= input.length()) {
+                String sub = input.substring(i, i + length);
+                allSubStrings.add(sub);
             }
-            if (check) {
+        }
+        for (String i : allSubStrings) {
+            if (i.equals(subString)) {
+                check = true;
                 break;
             }
         }

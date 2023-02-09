@@ -7,10 +7,6 @@ public class String07 {
 
     //Implement hàm tìm kiếm một chuỗi string trong một chuỗi string khác
     public boolean checkContainString(final String input, final String subString) {
-        if (input.equalsIgnoreCase(subString)) {
-            return true;
-        }
-
         Set<String> allSubStrings = new HashSet<>();
         boolean check = false;
         int length = subString.length();

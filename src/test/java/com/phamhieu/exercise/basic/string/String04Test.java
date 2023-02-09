@@ -13,7 +13,7 @@ class String04Test {
         assertFalse(test.checkDuplicateString(""));
         assertFalse(test.checkDuplicateString("abc"));
         assertTrue(test.checkDuplicateString("abab"));
-        assertTrue(test.checkDuplicateString("abrtrgfdfabererab"));
-        assertTrue(test.checkDuplicateString("rtrgfdfbabererab"));
+        assertTrue(test.checkDuplicateString("  "));
+        assertTrue(test.checkDuplicateString("abcdabcdabcd"));
     }
 }

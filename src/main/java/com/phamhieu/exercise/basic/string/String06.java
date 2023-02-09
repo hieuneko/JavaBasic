@@ -5,7 +5,7 @@ public class String06 {
     //Một Barcode EAN 13 có 13 số như trên thì con số đầu tiên bên phải
     // qua là số verify. Viết chương trình nhận vào chuỗi số gồm 12 chữ số.
     // Trả về kết quả là chữ số verify để có thể tạo thành một barcode gồm 13 số hợp lệ.
-    public int verifyNumberBarcodeEan(final String input) {
+    public int calculateEAN13CheckDigit(final String input) {
         int sumEven = 0;
         int sumOdd = 0;
         for (int i = 0; i < input.length(); i++) {
@@ -16,10 +16,10 @@ public class String06 {
                 sumOdd += temp;
             }
         }
-        int tempSum = sumEven + sumOdd;
+        int tempSum = 3 * sumEven + sumOdd;
         int verifyNumber = 0;
         for (int i = 0; i < 10; i++) {
-            if ((tempSum + 3 * i) % 10 == 0) {
+            if ((tempSum + i) % 10 == 0) {
                 verifyNumber = i;
             }
         }

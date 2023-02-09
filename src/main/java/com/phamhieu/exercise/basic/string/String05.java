@@ -8,16 +8,15 @@ public class String05 {
     // 150 chia hết cho 10 nên mã 8938505974194 là hợp lệ.
     //Viết chương trình kiểm tra tính hợp lệ của một barcode.
     public boolean checkBarcodeEan13(final String input) {
-        int sumInEven = 0;
-        int sumInOdd = 0;
+        int sum = 0;
         for (int i = 0; i < input.length(); i++) {
             int temp = Integer.parseInt(String.valueOf(input.charAt(i)));
             if ((i + 1) % 2 == 0) {
-                sumInEven += temp;
+                sum += 3 * temp;
             } else {
-                sumInOdd += temp;
+                sum += temp;
             }
         }
-        return (sumInOdd + 3 * sumInEven) % 10 == 0;
+        return sum % 10 == 0;
     }
 }

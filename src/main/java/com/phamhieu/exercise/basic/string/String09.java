@@ -11,10 +11,14 @@ public class String09 {
         }
 
         for (int i = 1; i < arrayInput.length; i++) {
-            if (arrayInput[i - 1] == 32 && arrayInput[i] >= 97 && arrayInput[i] <= 122) {
-                arrayInput[i] -= 32;
-            } else if (arrayInput[i - 1] != 32 && arrayInput[i] >= 65 && arrayInput[i] <= 90) {
-                arrayInput[i] += 32;
+            if (arrayInput[i - 1] == 32) {
+                if (arrayInput[i] >= 97 && arrayInput[i] <= 122) {
+                    arrayInput[i] -= 32;
+                }
+            } else {
+                if (arrayInput[i] >= 65 && arrayInput[i] <= 90) {
+                    arrayInput[i] += 32;
+                }
             }
         }
         return String.valueOf(arrayInput);

@@ -12,6 +12,7 @@ class String04Test {
         final var test = new String04();
         assertFalse(test.checkDuplicateString(""));
         assertFalse(test.checkDuplicateString("abc"));
+        assertFalse(test.checkDuplicateString("abcdabce"));
         assertTrue(test.checkDuplicateString("abab"));
         assertTrue(test.checkDuplicateString("  "));
         assertTrue(test.checkDuplicateString("abcdabcdabcd"));

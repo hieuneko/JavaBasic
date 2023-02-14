@@ -6,11 +6,11 @@ public class String09 {
         for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
             if (i == 0 || Character.isWhitespace(input.charAt(i - 1))) {
-                if (input.charAt(i) >= 'a' && input.charAt(i) <= 'z') {
+                if (Character.isLowerCase(input.charAt(i))) {
                     ch = Character.toUpperCase(input.charAt(i));
                 }
             } else {
-                if (input.charAt(i) >= 'A' && input.charAt(i) <= 'Z') {
+                if (Character.isUpperCase(input.charAt(i))) {
                     ch = Character.toLowerCase(input.charAt(i));
                 }
             }

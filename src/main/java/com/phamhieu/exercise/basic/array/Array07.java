@@ -2,33 +2,35 @@ package com.phamhieu.exercise.basic.array;
 
 public class Array07 {
 
-    //Viết chương trình chèn một số nguyên x vào một mảng số nguyên đã sắp
-    // xếp theo thứ tự tăng dần mà vẫn đảm bảo mảng kết quả tăng dần
-    // (yêu cầu không thực hiện thao tác sắp xếp trong hàm)
     public int[] insertNumberToArray(final int[] input, final int number) {
-        if (input.length == 0) {
-            return new int[]{number};
-        }
-
         int[] result = new int[input.length + 1];
-        result[0] = Math.min(number, input[0]);
-        int length = result.length;
-        if (number >= input[input.length - 1]) {
-            result[input.length] = number;
-            length = length - 1;
+        final int index = findIndexOfNumber(input, number);
+        for (int i = 0; i < index; i++) {
+            result[i] = input[i];
         }
-        int j = 1;
-        boolean check = false;
-        for (int i = 1; i < length; i++) {
-            if (input[j] >= number && input[j - 1] <= number && !check) {
-                result[i] = number;
-                check = true;
-                i++;
-            }
-            result[i] = input[j];
-            j++;
-
+        result[index] = number;
+        for (int i = index + 1; i < result.length; i++) {
+            result[i] = input[i - 1];
         }
         return result;
+    }
+
+    private int findIndexOfNumber(final int[] input, final int number) {
+        int left = 0;
+        int right = input.length - 1;
+        while (left <= right) {
+            final int mid = left + (right - left) / 2;
+
+            if (input[mid] == number) {
+                return mid;
+            }
+
+            if (input[mid] < number) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return left;
     }
 }

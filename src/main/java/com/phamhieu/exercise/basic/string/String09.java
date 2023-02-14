@@ -5,7 +5,7 @@ public class String09 {
         final StringBuilder tempString = new StringBuilder();
         for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
-            if (i == 0 || input.charAt(i - 1) == 32) {
+            if (i == 0 || Character.isWhitespace(input.charAt(i - 1))) {
                 if (input.charAt(i) >= 'a' && input.charAt(i) <= 'z') {
                     ch = Character.toUpperCase(input.charAt(i));
                 }

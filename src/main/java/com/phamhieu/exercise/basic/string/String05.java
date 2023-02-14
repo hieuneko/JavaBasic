@@ -10,8 +10,8 @@ public class String05 {
     public boolean checkBarcodeEan13(final String input) {
         int sum = 0;
         for (int i = 0; i < input.length(); i++) {
-            int temp = Integer.parseInt(String.valueOf(input.charAt(i)));
-            if ((i + 1) % 2 == 0) {
+            int temp = input.charAt(i) - '0';
+            if (i % 2 == 1) {
                 sum += 3 * temp;
             } else {
                 sum += temp;

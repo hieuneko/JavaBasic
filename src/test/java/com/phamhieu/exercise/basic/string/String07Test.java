@@ -11,7 +11,7 @@ class String07Test {
         final var test = new String07();
         assertEquals(-1, test.findIndexContainString("", "abc"));
         assertEquals(0, test.findIndexContainString("abc", ""));
-        assertEquals(-1, test.findIndexContainString("abc", "d"));
+        assertEquals(-1, test.findIndexContainString("abc", "dg"));
         assertEquals(5, test.findIndexContainString("abcdegh", "gh"));
         assertEquals(5, test.findIndexContainString("pham hieu", "hieu"));
     }

@@ -3,7 +3,7 @@ package com.phamhieu.exercise.basic.array;
 public class Array07 {
 
     public int[] insertNumberToArray(final int[] input, final int number) {
-        int[] result = new int[input.length + 1];
+        final int[] result = new int[input.length + 1];
         final int index = findIndexOfNumber(input, number);
         for (int i = 0; i < index; i++) {
             result[i] = input[i];

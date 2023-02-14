@@ -2,16 +2,15 @@ package com.phamhieu.exercise.basic.string;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class String07Test {
 
     @Test
     void checkContainString() {
         final var test = new String07();
-        assertFalse(test.checkContainString("", "abc"));
-        assertTrue(test.checkContainString("abc", ""));
-        assertTrue(test.checkContainString("pham hieu", "hieu"));
+        assertEquals(-1, test.checkContainString("", "abc"));
+        assertEquals(0, test.checkContainString("abc", ""));
+        assertEquals(5, test.checkContainString("pham hieu", "hieu"));
     }
 }

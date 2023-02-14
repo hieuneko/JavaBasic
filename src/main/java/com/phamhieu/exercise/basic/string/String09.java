@@ -1,22 +1,21 @@
 package com.phamhieu.exercise.basic.string;
 
 public class String09 {
-
-    //Viết chương trình để format các ký tự trong chuỗi sao cho
-    // các ký tự đầu mỗi từ luôn là viết hoa, các ký tự không phải đầu từ luôn phải viết thường
     public String formatCharInString(final String input) {
-        char[] arrayInput = input.toCharArray();
-        for (int i = 0; i < arrayInput.length; i++) {
-            if (i == 0 || arrayInput[i - 1] == 32) {
-                if (arrayInput[i] >= 97 && arrayInput[i] <= 122) {
-                    arrayInput[i] -= 32;
+        final StringBuilder tempString = new StringBuilder();
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+            if (i == 0 || input.charAt(i - 1) == 32) {
+                if (input.charAt(i) >= 'a' && input.charAt(i) <= 'z') {
+                    ch = Character.toUpperCase(input.charAt(i));
                 }
             } else {
-                if (arrayInput[i] >= 65 && arrayInput[i] <= 90) {
-                    arrayInput[i] += 32;
+                if (input.charAt(i) >= 'A' && input.charAt(i) <= 'Z') {
+                    ch = Character.toLowerCase(input.charAt(i));
                 }
             }
+            tempString.append(ch);
         }
-        return String.valueOf(arrayInput);
+        return tempString.toString();
     }
 }

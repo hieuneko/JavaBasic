@@ -4,27 +4,28 @@ import java.util.Arrays;
 
 public class Array04 {
     public int[] findLongestArray(final int[] input) {
-        int maxLength = 0;
-        int end = 0;
+        int length = 1;
+        int maxLength = 1;
         int start = 0;
-        for (int i = 1; i < input.length; i++) {
-            int count = 1;
-            for (int j = i; j > 0; j--) {
-                if (input[j] - input[j - 1] == 1) {
-                    count++;
-                    if (count > maxLength) {
-                        maxLength = count;
-                        end = i;
-                        start = j - 1;
-                    }
-                }
+        int end = 0;
 
+        for (int i = 0; i < input.length - 1; i++) {
+            if (input[i + 1] - input[i] == 1) {
+                length++;
+                if (length > maxLength) {
+                    maxLength = length;
+                    start = i + 2 - length;
+                    end = i + 2;
+                }
+            } else {
+                length = 1;
             }
         }
+
         if (maxLength < 2) {
             return new int[]{input[0]};
         }
 
-        return Arrays.copyOfRange(input, start, end + 1);
+        return Arrays.copyOfRange(input, start, end);
     }
 }

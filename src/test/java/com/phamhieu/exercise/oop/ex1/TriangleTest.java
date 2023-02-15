@@ -38,6 +38,8 @@ class TriangleTest {
     void contains() {
         final Triangle triangle = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
         assertFalse(triangle.contains(new Point(6, 4)));
+        assertFalse(triangle.contains(new Point(2, 5)));
+        assertFalse(triangle.contains(new Point(3, 0)));
         assertTrue(triangle.contains(new Point(4, 3)));
     }
 }

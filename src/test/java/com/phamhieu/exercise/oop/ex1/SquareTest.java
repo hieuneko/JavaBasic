@@ -7,8 +7,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SquareTest {
 
     @Test
-    void name() {
-        final var test = new Square(new Point(4, 4), 3);
-        assertEquals(9, test.getArea());
+    void testSquare() {
+        final Square instanceTest = new Square(new Point(4, 4), 3);
+        final Square square = new Square(instanceTest);
+        square.setSide(4);
+        assertEquals(4, square.getSide());
     }
 }

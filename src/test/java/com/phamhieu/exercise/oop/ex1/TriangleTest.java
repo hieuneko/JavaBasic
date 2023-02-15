@@ -8,8 +8,8 @@ class TriangleTest {
 
     @Test
     void testTriangle() {
-        final var test = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
-        Triangle triangle = new Triangle(test);
+        final Triangle instanceTest = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
+        final Triangle triangle = new Triangle(instanceTest);
         triangle.setPoint_1(new Point(2, 3));
         triangle.setPoint_2(new Point(5, 1));
         triangle.setPoint_3(new Point(3, 9));
@@ -24,20 +24,20 @@ class TriangleTest {
 
     @Test
     void getArea() {
-        final var test = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
-        assertEquals(12.5, test.getArea());
+        final Triangle triangle = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
+        assertEquals(12.5, triangle.getArea());
     }
 
     @Test
     void getPerimeter() {
-        final var test = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
-        assertEquals(16.216, test.getPerimeter(), 0.001);
+        final Triangle triangle = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
+        assertEquals(16.216, triangle.getPerimeter(), 0.001);
     }
 
     @Test
     void contains() {
-        final var test = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
-        assertFalse(test.contains(new Point(6, 4)));
-        assertTrue(test.contains(new Point(4, 3)));
+        final Triangle triangle = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
+        assertFalse(triangle.contains(new Point(6, 4)));
+        assertTrue(triangle.contains(new Point(4, 3)));
     }
 }

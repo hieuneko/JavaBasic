@@ -8,27 +8,27 @@ class CircleTest {
 
     @Test
     void testCircle() {
-        final var test = new Circle(new Point(3, 4), 5);
-        Circle circle_1 = new Circle(test);
-        circle_1.setCenter(new Point(2, 2));
+        final Circle instanceTest = new Circle(new Point(3, 4), 5);
+        final Circle circle = new Circle(instanceTest);
+        circle.setCenter(new Point(2, 2));
 
-        assertEquals(2, circle_1.getCenter().getX());
-        assertEquals(2, circle_1.getCenter().getY());
+        assertEquals(2, circle.getCenter().getX());
+        assertEquals(2, circle.getCenter().getY());
 
-        circle_1.setRadius(10);
-        assertEquals(10, circle_1.getRadius());
+        circle.setRadius(10);
+        assertEquals(10, circle.getRadius());
     }
 
     @Test
     void getArea() {
-        final var test = new Circle(new Point(3, 4), 5);
-        assertEquals(78.5, test.getArea(), 0.1);
+        final Circle circle = new Circle(new Point(3, 4), 5);
+        assertEquals(78.5, circle.getArea(), 0.1);
     }
 
     @Test
     void getPerimeter() {
-        final var test = new Circle(new Point(3, 4), 5);
-        assertEquals(31.4, test.getPerimeter(), 0.1);
+        final Circle circle = new Circle(new Point(3, 4), 5);
+        assertEquals(31.4, circle.getPerimeter(), 0.1);
     }
 
     @Test

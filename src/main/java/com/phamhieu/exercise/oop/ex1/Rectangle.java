@@ -18,14 +18,6 @@ public class Rectangle implements Shape {
         this.height = rectangle.height;
     }
 
-    public Point getBottomLeft() {
-        return bottomLeft;
-    }
-
-    public void setBottomLeft(final Point bottomLeft) {
-        this.bottomLeft = bottomLeft;
-    }
-
     public Point getTopRight() {
         return topRight;
     }
@@ -62,9 +54,6 @@ public class Rectangle implements Shape {
 
     @Override
     public boolean contains(final Point point) {
-        if (point.getX() > bottomLeft.getX() && point.getX() < topRight.getX() && point.getY() > bottomLeft.getY() && point.getY() < topRight.getY()) {
-            return true;
-        }
-        return false;
+        return point.getX() > (topRight.getX() - width) && point.getX() < topRight.getX() && point.getY() > (topRight.getY() - height) && point.getY() < topRight.getY();
     }
 }

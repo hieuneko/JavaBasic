@@ -36,6 +36,7 @@ class RectangleTest {
     void contains() {
         final Rectangle rectangle = new Rectangle(new Point(6, 4), 5, 3);
         assertTrue(rectangle.contains(new Point(2, 3)));
-        assertFalse(rectangle.contains(new Point(8, 1)));
+        assertFalse(rectangle.contains(new Point(8, 5)));
+        assertFalse(rectangle.contains(new Point(0, 0)));
     }
 }

@@ -25,4 +25,8 @@ public class Point {
     public void setY(int y) {
         this.y = y;
     }
+
+    public double distance(Point point) {
+        return Math.hypot(point.getX() - this.getX(), point.getY() - this.getY());
+    }
 }

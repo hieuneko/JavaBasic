@@ -53,10 +53,10 @@ public class Rectangle implements Shape {
 
     @Override
     public boolean contains(final Point point) {
-        if (!(point.getX() > (topRight.getX() - width) && point.getX() < topRight.getX())) {
+        if (!(point.getX() >= (topRight.getX() - width) && point.getX() <= topRight.getX())) {
             return false;
         }
-        if (!(point.getY() > (topRight.getY() - height) && point.getY() < topRight.getY())) {
+        if (!(point.getY() >= (topRight.getY() - height) && point.getY() <= topRight.getY())) {
             return false;
         }
         return true;

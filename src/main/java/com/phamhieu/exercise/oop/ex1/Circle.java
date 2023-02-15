@@ -48,6 +48,7 @@ public class Circle implements Shape {
 
     @Override
     public boolean contains(final Point point) {
-        return Multi.powNumber(point.getX() - center.getX(), 2) + Multi.powNumber(point.getY() - center.getY(), 2) <= (radius * radius);
+        Multi calculator = new Multi();
+        return calculator.powNumber(point.getX() - center.getX(), 2) + calculator.powNumber(point.getY() - center.getY(), 2) <= (radius * radius);
     }
 }

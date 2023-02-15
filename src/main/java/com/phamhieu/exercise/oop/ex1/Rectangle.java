@@ -1,7 +1,6 @@
 package com.phamhieu.exercise.oop.ex1;
 
 public class Rectangle implements Shape {
-    private Point bottomLeft;
     private Point topRight;
     private double width;
     private double height;
@@ -54,6 +53,12 @@ public class Rectangle implements Shape {
 
     @Override
     public boolean contains(final Point point) {
-        return point.getX() > (topRight.getX() - width) && point.getX() < topRight.getX() && point.getY() > (topRight.getY() - height) && point.getY() < topRight.getY();
+        if (!(point.getX() > (topRight.getX() - width) && point.getX() < topRight.getX())) {
+            return false;
+        }
+        if (!(point.getY() > (topRight.getY() - height) && point.getY() < topRight.getY())) {
+            return false;
+        }
+        return true;
     }
 }

@@ -53,9 +53,10 @@ public class Triangle implements Shape {
 
     @Override
     public boolean contains(final Point point) {
-        int side_1 = Multi.checkSidePoint(point_2, point_3, point) * Multi.checkSidePoint(point_2, point_3, point_1);
-        int side_2 = Multi.checkSidePoint(point_1, point_3, point) * Multi.checkSidePoint(point_1, point_3, point_2);
-        int side_3 = Multi.checkSidePoint(point_1, point_2, point) * Multi.checkSidePoint(point_1, point_2, point_3);
+        Multi calculator = new Multi();
+        int side_1 = calculator.checkSidePoint(point_2, point_3, point) * calculator.checkSidePoint(point_2, point_3, point_1);
+        int side_2 = calculator.checkSidePoint(point_1, point_3, point) * calculator.checkSidePoint(point_1, point_3, point_2);
+        int side_3 = calculator.checkSidePoint(point_1, point_2, point) * calculator.checkSidePoint(point_1, point_2, point_3);
         return side_1 >= 0 && side_2 >= 0 && side_3 >= 0;
     }
 }

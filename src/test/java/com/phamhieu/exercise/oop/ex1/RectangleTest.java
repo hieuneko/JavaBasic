@@ -38,5 +38,6 @@ class RectangleTest {
         assertTrue(rectangle.contains(new Point(2, 3)));
         assertFalse(rectangle.contains(new Point(8, 5)));
         assertFalse(rectangle.contains(new Point(0, 0)));
+        assertFalse(rectangle.contains(new Point(3, 8)));
     }
 }

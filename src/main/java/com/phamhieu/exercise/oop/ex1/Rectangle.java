@@ -56,9 +56,6 @@ public class Rectangle implements Shape {
         if (!(point.getX() >= (topRight.getX() - width) && point.getX() <= topRight.getX())) {
             return false;
         }
-        if (!(point.getY() >= (topRight.getY() - height) && point.getY() <= topRight.getY())) {
-            return false;
-        }
-        return true;
+        return point.getY() >= (topRight.getY() - height) && point.getY() <= topRight.getY();
     }
 }

@@ -10,14 +10,22 @@ public class Circle implements Shape {
      * @param center is point at center of circle
      * @param radius is length from center point to circle
      */
-    public Circle(Point center, double radius) {
+    public Circle(final Point center, final double radius) {
         this.center = center;
         this.radius = radius;
     }
 
-    public Circle(Circle circle) {
+    public Circle(final Circle circle) {
         this.center = circle.center;
         this.radius = circle.radius;
+    }
+
+    public Point getCenter() {
+        return center;
+    }
+
+    public void setCenter(final Point center) {
+        this.center = center;
     }
 
     public double getRadius() {
@@ -39,7 +47,7 @@ public class Circle implements Shape {
     }
 
     @Override
-    public boolean contains(Point point) {
-        return Power.powNumber(point.getX() - center.getX(), 2) + Power.powNumber(point.getY() - center.getY(), 2) <= (radius * radius);
+    public boolean contains(final Point point) {
+        return Multi.powNumber(point.getX() - center.getX(), 2) + Multi.powNumber(point.getY() - center.getY(), 2) <= (radius * radius);
     }
 }

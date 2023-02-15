@@ -7,15 +7,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class CircleTest {
 
     @Test
-    void getRadius() {
+    void testCircle() {
         final var test = new Circle(new Point(3, 4), 5);
-        assertEquals(5, test.getRadius());
-    }
+        Circle circle_1 = new Circle(test);
+        circle_1.setCenter(new Point(2, 2));
 
-    @Test
-    void setRadius() {
-        final var test = new Circle(new Point(3, 4), 5);
-        test.setRadius(6);
+        assertEquals(2, circle_1.getCenter().getX());
+        assertEquals(2, circle_1.getCenter().getY());
+
+        circle_1.setRadius(10);
+        assertEquals(10, circle_1.getRadius());
     }
 
     @Test

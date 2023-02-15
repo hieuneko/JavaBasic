@@ -1,46 +1,44 @@
 package com.phamhieu.exercise.oop.ex1;
 
 public class Rectangle implements Shape {
-    private Point bottom_left;
-    private Point top_right;
+    private Point bottomLeft;
+    private Point topRight;
     private double width;
     private double height;
 
-    public Rectangle(Point bottom_left, Point top_right, double width, double height) {
-        this.bottom_left = bottom_left;
-        this.top_right = top_right;
+    public Rectangle(final Point topRight, final double width, final double height) {
+        this.topRight = topRight;
         this.width = width;
         this.height = height;
     }
 
-    public Rectangle(Rectangle rectangle) {
-        this.bottom_left = rectangle.bottom_left;
-        this.top_right = rectangle.top_right;
+    public Rectangle(final Rectangle rectangle) {
+        this.topRight = rectangle.topRight;
         this.width = rectangle.width;
         this.height = rectangle.height;
     }
 
-    public Point getBottom_left() {
-        return bottom_left;
+    public Point getBottomLeft() {
+        return bottomLeft;
     }
 
-    public void setBottom_left(Point bottom_left) {
-        this.bottom_left = bottom_left;
+    public void setBottomLeft(final Point bottomLeft) {
+        this.bottomLeft = bottomLeft;
     }
 
-    public Point getTop_right() {
-        return top_right;
+    public Point getTopRight() {
+        return topRight;
     }
 
-    public void setTop_right(Point top_right) {
-        this.top_right = top_right;
+    public void setTopRight(final Point topRight) {
+        this.topRight = topRight;
     }
 
     public double getWidth() {
         return width;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         this.width = width;
     }
 
@@ -48,7 +46,7 @@ public class Rectangle implements Shape {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
@@ -63,8 +61,8 @@ public class Rectangle implements Shape {
     }
 
     @Override
-    public boolean contains(Point point) {
-        if (point.getX() > bottom_left.getX() && point.getX() < top_right.getX() && point.getY() > bottom_left.getY() && point.getY() < top_right.getY()) {
+    public boolean contains(final Point point) {
+        if (point.getX() > bottomLeft.getX() && point.getX() < topRight.getX() && point.getY() > bottomLeft.getY() && point.getY() < topRight.getY()) {
             return true;
         }
         return false;

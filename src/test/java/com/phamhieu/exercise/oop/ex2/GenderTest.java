@@ -10,8 +10,8 @@ class GenderTest {
         final var male = Gender.MALE;
         assertEquals("Male", male.getName());
         final var female = Gender.FEMALE;
-        assertEquals("Male", female.getName());
+        assertEquals("Female", female.getName());
         final var other = Gender.OTHER;
-        assertEquals("Male", other.getName());
+        assertEquals("Other", other.getName());
     }
 }

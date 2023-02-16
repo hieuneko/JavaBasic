@@ -1,5 +1,7 @@
 package com.phamhieu.exercise.oop.ex1;
 
+import static com.phamhieu.exercise.oop.ex1.Utils.powNumber;
+
 public class Circle implements Shape {
     private Point center;
     private double radius;
@@ -48,6 +50,6 @@ public class Circle implements Shape {
 
     @Override
     public boolean contains(final Point point) {
-        return Utils.powNumber(point.getX() - center.getX(), 2) + Utils.powNumber(point.getY() - center.getY(), 2) <= (radius * radius);
+        return powNumber(point.getX() - center.getX(), 2) + powNumber(point.getY() - center.getY(), 2) <= (radius * radius);
     }
 }

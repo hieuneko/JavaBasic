@@ -1,5 +1,7 @@
 package com.phamhieu.exercise.oop.ex1;
 
+import static com.phamhieu.exercise.oop.ex1.Utils.checkSidePoint;
+
 public class Triangle implements Shape {
     private Point point1;
     private Point point2;
@@ -53,9 +55,9 @@ public class Triangle implements Shape {
 
     @Override
     public boolean contains(final Point point) {
-        final int side1 = Utils.checkSidePoint(point2, point3, point) * Utils.checkSidePoint(point2, point3, point1);
-        final int side2 = Utils.checkSidePoint(point1, point3, point) * Utils.checkSidePoint(point1, point3, point2);
-        final int side3 = Utils.checkSidePoint(point1, point2, point) * Utils.checkSidePoint(point1, point2, point3);
+        final int side1 = checkSidePoint(point2, point3, point) * checkSidePoint(point2, point3, point1);
+        final int side2 = checkSidePoint(point1, point3, point) * checkSidePoint(point1, point3, point2);
+        final int side3 = checkSidePoint(point1, point2, point) * checkSidePoint(point1, point2, point3);
         return side1 >= 0 && side2 >= 0 && side3 >= 0;
     }
 }

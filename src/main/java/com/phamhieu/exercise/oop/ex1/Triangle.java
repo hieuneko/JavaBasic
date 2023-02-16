@@ -1,5 +1,6 @@
 package com.phamhieu.exercise.oop.ex1;
 
+
 import static com.phamhieu.exercise.oop.ex1.Utils.checkSidePoint;
 
 public class Triangle implements Shape {

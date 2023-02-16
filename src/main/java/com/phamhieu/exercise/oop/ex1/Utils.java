@@ -3,7 +3,7 @@ package com.phamhieu.exercise.oop.ex1;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
-public class Utils {
+class Utils {
 
     public static double powNumber(final double a, final int n) {
         double result = 1;

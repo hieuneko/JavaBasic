@@ -1,17 +1,12 @@
 package com.phamhieu.exercise.oop.ex1;
 
+
 import static com.phamhieu.exercise.oop.ex1.Utils.powNumber;
 
 public class Circle implements Shape {
     private Point center;
     private double radius;
 
-    /**
-     * create new Circle object with
-     *
-     * @param center is point at center of circle
-     * @param radius is length from center point to circle
-     */
     public Circle(final Point center, final double radius) {
         this.center = center;
         this.radius = radius;

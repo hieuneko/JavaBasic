@@ -11,7 +11,7 @@ public class String07 {
         return -1;
     }
 
-    private static boolean isStringFoundAt(String input, String subString, int index) {
+    private static boolean isStringFoundAt(final String input, final String subString, final int index) {
         if (index + subString.length() > input.length()) {
             return false;
         }

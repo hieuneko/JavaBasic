@@ -11,5 +11,6 @@ class Sohoc06Test {
         final var test = new Sohoc06();
         assertEquals(1, test.findSquareRoot(1), 0.000001);
         assertEquals(7.071068, test.findSquareRoot(50), 0.000001);
+        assertEquals(25, test.findSquareRoot(625), 0.000001);
     }
 }

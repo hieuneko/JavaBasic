@@ -6,10 +6,10 @@ public class Sohoc06 {
 
     public double findSquareRoot(final double input) {
         double number = input;
-        double temp = 1;
-        while (number - temp > ACCURACY) {
-            number = (number + temp) / 2;
-            temp = input / number;
+        double tempNumber = 1;
+        while (number - tempNumber > ACCURACY) {
+            number = (number + tempNumber) / 2;
+            tempNumber = input / number;
         }
         return number;
     }

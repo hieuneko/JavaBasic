@@ -9,10 +9,9 @@ public class Array03 {
         for (int i = 0; i < input.length - 1; i++) {
             for (int j = i + 1; j < input.length; j++) {
                 if (getSumDigits(arrayNumber[i]) > getSumDigits(arrayNumber[j])) {
-                    int temp;
-                    temp = arrayNumber[i];
-                    arrayNumber[i] = arrayNumber[j];
-                    arrayNumber[j] = temp;
+                    arrayNumber[i] = arrayNumber[i] + arrayNumber[j];
+                    arrayNumber[j] = arrayNumber[i] - arrayNumber[j];
+                    arrayNumber[i] = arrayNumber[i] - arrayNumber[j];
                 }
             }
         }

@@ -5,23 +5,16 @@ public class String04 {
         if (input.length() == 0) {
             return false;
         }
+
         int lenSubString = countLenghtSubString(input);
         if (input.length() % lenSubString != 0) {
             return false;
         }
 
-        int numberSub = input.length() / lenSubString;
-        String[] allSubStrings = new String[numberSub];
-        int i = 0;
-        int j = 0;
-        while (i < input.length()) {
-            allSubStrings[j] = input.substring(i, i + lenSubString);
-            i += lenSubString;
-            j++;
-        }
-        String sub = input.substring(0, lenSubString);
-        for (String k : allSubStrings) {
-            if (!k.equals(sub)) {
+        final String sub = input.substring(0, lenSubString);
+        for (int i = lenSubString; i < input.length(); i += lenSubString) {
+            String temp = input.substring(i, i + lenSubString);
+            if (!temp.equals(sub)) {
                 return false;
             }
         }

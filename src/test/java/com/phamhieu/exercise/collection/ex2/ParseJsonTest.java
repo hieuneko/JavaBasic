@@ -11,7 +11,7 @@ class ParseJsonTest {
     @Test
     void parseJson() throws IOException {
         final var parseObject = new ParseJson();
-        final var vietnameseObject = parseObject.parseJson("address.json");
+        final var vietnameseObject = parseObject.parseJson("src/main/resources/address.json");
         assertEquals("01", vietnameseObject.getProvinces().get(0).getIdProvince());
         assertEquals("Thành phố Đà Nẵng", vietnameseObject.getProvinces().get(3).getName());
     }

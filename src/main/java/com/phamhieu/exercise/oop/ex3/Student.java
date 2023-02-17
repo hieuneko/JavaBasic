@@ -1,11 +1,9 @@
 package com.phamhieu.exercise.oop.ex3;
 
 import lombok.Builder;
-import lombok.Data;
 
 import java.util.Date;
 
-@Data
 @Builder
 public class Student {
     private String firstName;

@@ -9,47 +9,46 @@ public class StudentBuilder {
         student = new Student();
     }
 
-    public StudentBuilder firstName(String firstName) {
+    public StudentBuilder firstName(final String firstName) {
         student.setFirstName(firstName);
         return this;
     }
 
-    public StudentBuilder lastName(String lastName) {
+    public StudentBuilder lastName(final String lastName) {
         student.setLastName(lastName);
         return this;
     }
 
-    public StudentBuilder email(String email) {
+    public StudentBuilder email(final String email) {
         student.setEmail(email);
         return this;
     }
 
-    public StudentBuilder gender(Gender gender) {
+    public StudentBuilder gender(final Gender gender) {
         student.setGender(gender);
         return this;
     }
 
-    public StudentBuilder birthday(Date birthday) {
+    public StudentBuilder birthday(final Date birthday) {
         student.setBirthday(birthday);
         return this;
     }
 
-    public StudentBuilder className(String className) {
+    public StudentBuilder className(final String className) {
         student.setClassName(className);
         return this;
     }
 
-    public StudentBuilder address(String address) {
+    public StudentBuilder address(final String address) {
         student.setAddress(address);
         return this;
     }
 
-    public StudentBuilder phone(String phone) {
+    public StudentBuilder phone(final String phone) {
         student.setPhone(phone);
         return this;
     }
 
-    public Student build() {
-        return student;
+    public void build() {
     }
 }

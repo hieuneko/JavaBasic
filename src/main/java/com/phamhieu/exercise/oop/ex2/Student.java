@@ -16,7 +16,7 @@ public class Student {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
+    public void setFirstName(final String firstName) {
         this.firstName = firstName;
     }
 
@@ -24,7 +24,7 @@ public class Student {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    public void setLastName(final String lastName) {
         this.lastName = lastName;
     }
 
@@ -32,7 +32,7 @@ public class Student {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(final Date birthday) {
         this.birthday = birthday;
     }
 
@@ -40,7 +40,7 @@ public class Student {
         return className;
     }
 
-    public void setClassName(String className) {
+    public void setClassName(final String className) {
         this.className = className;
     }
 
@@ -48,7 +48,7 @@ public class Student {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(final String address) {
         this.address = address;
     }
 
@@ -56,7 +56,7 @@ public class Student {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(final Gender gender) {
         this.gender = gender;
     }
 
@@ -64,7 +64,7 @@ public class Student {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(final String email) {
         this.email = email;
     }
 
@@ -72,7 +72,7 @@ public class Student {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(final String phone) {
         this.phone = phone;
     }
 }

@@ -8,8 +8,7 @@ class CircleTest {
 
     @Test
     void testCircle() {
-        final Circle instanceTest = new Circle(new Point(3, 4), 5);
-        final Circle circle = new Circle(instanceTest);
+        final Circle circle = new Circle(new Point(3, 4), 5);
         circle.setCenter(new Point(2, 2));
 
         assertEquals(2, circle.getCenter().getX());

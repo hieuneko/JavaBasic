@@ -12,11 +12,6 @@ public class Circle implements Shape {
         this.radius = radius;
     }
 
-    public Circle(final Circle circle) {
-        this.center = circle.center;
-        this.radius = circle.radius;
-    }
-
     public Point getCenter() {
         return center;
     }
@@ -29,7 +24,7 @@ public class Circle implements Shape {
         return radius;
     }
 
-    public void setRadius(double radius) {
+    public void setRadius(final double radius) {
         this.radius = radius;
     }
 

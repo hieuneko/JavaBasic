@@ -9,8 +9,7 @@ class TriangleTest {
 
     @Test
     void testTriangle() {
-        final Triangle instanceTest = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
-        final Triangle triangle = new Triangle(instanceTest);
+        final Triangle triangle = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
         triangle.setPoint1(new Point(2, 3));
         triangle.setPoint2(new Point(5, 1));
         triangle.setPoint3(new Point(3, 9));
@@ -28,7 +27,7 @@ class TriangleTest {
     @Test
     void getArea() {
         final Triangle triangle = new Triangle(new Point(1, 1), new Point(6, 1), new Point(4, 6));
-        assertEquals(12.5, triangle.getArea());
+        assertEquals(12.5, triangle.getArea(), 0.0001);
     }
 
 

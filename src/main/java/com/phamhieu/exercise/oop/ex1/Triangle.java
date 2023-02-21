@@ -14,12 +14,6 @@ public class Triangle implements Shape {
         this.point3 = point3;
     }
 
-    public Triangle(final Triangle triangle) {
-        this.point1 = triangle.point1;
-        this.point2 = triangle.point2;
-        this.point3 = triangle.point3;
-    }
-
     public Point getPoint1() {
         return point1;
     }
@@ -46,7 +40,11 @@ public class Triangle implements Shape {
 
     @Override
     public double getArea() {
-        return Math.abs((point1.getX() * (point2.getY() - point3.getY()) + point2.getX() * (point3.getY() - point1.getY()) + point3.getX() * (point1.getY() - point2.getY())) / 2.0);
+        final double halfPerimeter = this.getPerimeter() / 2.0;
+        final double edge1 = this.point1.distance(point2);
+        final double edge2 = this.point2.distance(point3);
+        final double edge3 = this.point3.distance(point1);
+        return Math.sqrt(halfPerimeter * (halfPerimeter - edge1) * (halfPerimeter - edge2) * (halfPerimeter - edge3));
     }
 
     @Override

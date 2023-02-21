@@ -9,8 +9,7 @@ class SquareTest {
 
     @Test
     void testSquare() {
-        final Square instanceTest = new Square(new Point(4, 4), 3);
-        final Square square = new Square(instanceTest);
+        final Square square = new Square(new Point(4, 4), 3);
         square.setSide(4);
         assertEquals(4, square.getSide());
     }

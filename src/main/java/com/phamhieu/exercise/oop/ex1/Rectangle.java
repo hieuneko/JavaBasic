@@ -1,35 +1,29 @@
 package com.phamhieu.exercise.oop.ex1;
 
 public class Rectangle implements Shape {
-    private Point topRight;
+    private Point topLeft;
     private double width;
     private double height;
 
-    public Rectangle(final Point topRight, final double width, final double height) {
-        this.topRight = topRight;
+    public Rectangle(final Point topLeft, final double width, final double height) {
+        this.topLeft = topLeft;
         this.width = width;
         this.height = height;
     }
 
-    public Rectangle(final Rectangle rectangle) {
-        this.topRight = rectangle.topRight;
-        this.width = rectangle.width;
-        this.height = rectangle.height;
+    public Point getTopLeft() {
+        return topLeft;
     }
 
-    public Point getTopRight() {
-        return topRight;
-    }
-
-    public void setTopRight(final Point topRight) {
-        this.topRight = topRight;
+    public void setTopLeft(final Point topLeft) {
+        this.topLeft = topLeft;
     }
 
     public double getWidth() {
         return width;
     }
 
-    public void setWidth(double width) {
+    public void setWidth(final double width) {
         this.width = width;
     }
 
@@ -37,7 +31,7 @@ public class Rectangle implements Shape {
         return height;
     }
 
-    public void setHeight(double height) {
+    public void setHeight(final double height) {
         this.height = height;
     }
 
@@ -53,9 +47,9 @@ public class Rectangle implements Shape {
 
     @Override
     public boolean contains(final Point point) {
-        if (!(point.getX() >= (topRight.getX() - width) && point.getX() <= topRight.getX())) {
+        if (!(point.getX() <= (topLeft.getX() + width) && point.getX() >= topLeft.getX())) {
             return false;
         }
-        return point.getY() >= (topRight.getY() - height) && point.getY() <= topRight.getY();
+        return point.getY() <= (topLeft.getY() + height) && point.getY() >= topLeft.getY();
     }
 }

@@ -14,7 +14,7 @@ public class Point {
         return x;
     }
 
-    public void setX(int x) {
+    public void setX(final int x) {
         this.x = x;
     }
 
@@ -22,11 +22,11 @@ public class Point {
         return y;
     }
 
-    public void setY(int y) {
+    public void setY(final int y) {
         this.y = y;
     }
 
-    public double distance(Point point) {
+    public double distance(final Point point) {
         return Math.hypot(point.getX() - this.getX(), point.getY() - this.getY());
     }
 }

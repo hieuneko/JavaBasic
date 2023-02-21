@@ -5,10 +5,6 @@ public class Square extends Rectangle {
         super(top_right, side, side);
     }
 
-    public Square(final Square square) {
-        super(square);
-    }
-
     public double getSide() {
         return getWidth();
     }

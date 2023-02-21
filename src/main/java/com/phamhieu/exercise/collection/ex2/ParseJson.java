@@ -11,7 +11,7 @@ import java.io.InputStream;
 import java.util.List;
 
 @UtilityClass
-public final class ParseJson {
+public class ParseJson {
 
     public static <T> T parseJson(final Class<T> targetClass, final String fileName) throws IOException {
         ClassLoader classLoader = ParseJson.class.getClassLoader();

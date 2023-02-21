@@ -31,8 +31,8 @@ class SquareTest {
 
     @Test
     void contains() {
-        final Square square = new Square(new Point(4, 4), 3);
-        assertTrue(square.contains(new Point(3, 3)));
+        final Square square = new Square(new Point(1, 2), 3);
+        assertTrue(square.contains(new Point(2, 3)));
         assertFalse(square.contains(new Point(5, 7)));
     }
 }

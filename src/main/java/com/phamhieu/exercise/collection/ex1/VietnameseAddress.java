@@ -6,7 +6,7 @@ import java.util.List;
 
 @Data
 public class VietnameseAddress {
-    private List<Province> provinces;
-    private List<District> districts;
     private List<Commune> communes;
+    private List<District> districts;
+    private List<Province> provinces;
 }

@@ -1,17 +1,18 @@
 package com.phamhieu.exercise.collection.ex2;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.phamhieu.exercise.collection.ex1.VietnameseAddress;
+import lombok.experimental.UtilityClass;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
+@UtilityClass
 public class ParseJson {
 
-    public VietnameseAddress parseJson(final String fileName) throws IOException {
-        File file = new File(fileName);
+    public static <T> T parseJson(final Class<T> targetClass, final String fileName) throws IOException {
+        ClassLoader classLoader = ParseJson.class.getClassLoader();
+        InputStream file = classLoader.getResourceAsStream(fileName);
         ObjectMapper objectMapper = new ObjectMapper();
-        VietnameseAddress vietnameseAddress = objectMapper.readValue(file, VietnameseAddress.class);
-        return vietnameseAddress;
+        return objectMapper.readValue(file, targetClass);
     }
 }

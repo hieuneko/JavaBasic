@@ -1,18 +1,20 @@
 package com.phamhieu.exercise.collection.ex3;
 
-import com.phamhieu.exercise.collection.ex2.ParseJson;
+import com.phamhieu.exercise.collection.ex1.VietnameseAddress;
 
 import java.io.IOException;
-import java.util.HashSet;
 import java.util.Set;
+
+import static com.phamhieu.exercise.collection.ex2.ParseJson.parseJson;
+import static java.util.stream.Collectors.toSet;
 
 public class SearchAddress {
 
     public Set<String> searchAddress(final String input) throws IOException {
-        final var parseObject = new ParseJson();
-        final var vietnameseObject = parseObject.parseJson("src/main/resources/address.json");
-        Set<String> addressList = new HashSet<>();
-        
-        return addressList;
+        final var vietnameseObject = parseJson(VietnameseAddress.class, "address.json");
+        return vietnameseObject.getCommunes().stream()
+                .filter(commune -> commune.getName().contains(input))
+                .map(commune -> commune.getString(vietnameseObject.getDistricts(), vietnameseObject.getProvinces()))
+                .collect(toSet());
     }
 }
